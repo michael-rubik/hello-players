@@ -16,7 +16,7 @@ The template also includes the default options offered by [`create-next-app`](ht
 
 
 ## Getting Started Locally
-
+### test git commits
 To use this template, run the following command:
 
 ```bash
