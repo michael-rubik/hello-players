@@ -49,6 +49,7 @@ To take advantage of the Github Actions included in this template, generate a Fl
 ```bash
 # set the repository secret in GitHub
 fly auth token | gh secret set FLY_API_TOKEN
+## lets try again
 ```
 
 ## Deploy to Fly.io
