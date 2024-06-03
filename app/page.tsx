@@ -14,3 +14,11 @@ export default function Home() {
     </main>
   );
 }
+
+import pg from "pg";
+const { Client } = pg;
+const client = new Client({connectionString: process.env.DATABASE_URL})
+await client.connect()
+const res = await client.query('SELECT $1::text as message', ['Hello world!'])
+console.log(res.rows[0].message) // Hello world!
+await client.end()
